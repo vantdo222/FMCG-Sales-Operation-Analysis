@@ -6,42 +6,16 @@ This project is an **end-to-end FMCG analytics dashboard** designed to support *
 It transforms raw transactional sales data into **actionable insights** across demand, supply, promotions, and service levels.
 
 The dashboard is built with a **business-first mindset**, focusing on KPIs used by FMCG leaders to balance growth, availability, and inventory risk.
+**Link to dashboard:** https://public.tableau.com/views/SalesDashboard_17693900358480/SalesDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ---
 
 ## 🎯 Business Objectives
-- Improve **forecast accuracy** and identify demand bias
+- Evaluate and visualize Yoy performance
 - Quantify **promotion effectiveness** and uplift
 - Optimize **inventory and service levels**
 - Highlight **stockout and overstock risks**
-- Enable **regional and SKU-level performance analysis**
-
----
-
-## 📊 Key Dashboard Sections
-- **Forecast Accuracy**
-  - MAPE, WAPE, Forecast Bias
-
-- **Promotional Uplift Analysis**
-  - Baseline vs promoted sales impact
-
-- **ABC / XYZ Segmentation**
-  - Revenue importance vs demand variability
-
-- **Revenue by Region**
-  - Country and city-level performance
-
-- **Service Level Performance**
-  - Fill rate and availability KPIs
-
-- **Stockout & Overstock Heatmaps**
-  - Inventory risk visualization
-
-- **Lead Time Variability**
-  - Supply chain reliability analysis
-
-- **Geographic Map**
-  - Sales distribution using latitude and longitude
+- Enable **regional and categorical performance analysis**
 
 ---
 
@@ -49,15 +23,13 @@ The dashboard is built with a **business-first mindset**, focusing on KPIs used 
 - Identification of **high-revenue SKUs with unstable demand**
 - Detection of **unprofitable or ineffective promotions**
 - Regional performance comparison highlighting **growth vs margin erosion**
-- Visibility into **supply chain bottlenecks** affecting service levels
 - Improved balance between **inventory investment and customer service**
 
 ---
 
 ## 🛠 Tools & Technologies
+- **SQL** – Data preparation and KPI logic
 - **Tableau** – Interactive dashboards and visual analytics
-- **Python / SQL** – Data preparation and KPI logic
-- **CSV Dataset** – ~1M rows across 3 years of FMCG transactional data
 
 ---
 
@@ -70,6 +42,7 @@ The dashboard is built with a **business-first mindset**, focusing on KPIs used 
   - Inventory and stock status
   - Lead times
   - Geographic attributes
+- **Link to dataset:** https://www.kaggle.com/datasets/robertocarlost/fmcg-multi-country-sales-dataset
 
 ---
 
