@@ -6,6 +6,7 @@ This project is an **end-to-end FMCG analytics dashboard** designed to support *
 It transforms raw transactional sales data into **actionable insights** across demand, supply, promotions, and service levels.
 
 The dashboard is built with a **business-first mindset**, focusing on KPIs used by FMCG leaders to balance growth, availability, and inventory risk.
+
 **Link to dashboard:** https://public.tableau.com/views/SalesDashboard_17693900358480/SalesDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ---
