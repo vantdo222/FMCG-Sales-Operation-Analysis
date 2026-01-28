@@ -1,4 +1,4 @@
-# 📊 FMCG Sales & Operations Planning Analysis
+# 📊 FMCG Sales & Operations Analysis
 
 ## 🧾 Overview
 This project is an **end-to-end FMCG analytics dashboard** designed to support **Sales & Operations Planning (S&OP)** and executive decision-making.
