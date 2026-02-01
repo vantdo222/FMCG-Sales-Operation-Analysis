@@ -3,6 +3,7 @@
 Tableau | SQL | FMCG Analytics | Sales & Operations
 
 This project features an end-to-end FMCG analytics solution combining SQL-based data exploration with a Tableau dashboard. Using three years of transactional sales data (~1M rows), the project analyzes forecast accuracy, promotions, inventory risk, service levels, and regional performance.
+
 Dashboard Link: https://public.tableau.com/app/profile/van.do7323/viz/SalesDashboard_17693900358480/SalesDashboard
 
 ---
