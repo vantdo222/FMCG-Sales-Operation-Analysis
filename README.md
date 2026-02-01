@@ -1,4 +1,4 @@
-📊 **FMCG Sales & Operations Dashboard (S&OP Ready)**
+📊 **FMCG Sales & Operations Analysis**
 
 Tableau | SQL | FMCG Analytics | Sales & Operations
 
