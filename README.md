@@ -1,63 +1,75 @@
-# 📊 FMCG Sales & Operations Analysis
+📊 **FMCG Sales & Operations Dashboard (S&OP Ready)**
 
-## 🧾 Overview
-This project is an **end-to-end FMCG analytics dashboard** designed to support **Sales & Operations Planning (S&OP)** and executive decision-making.
+Tableau | SQL | FMCG Analytics | Sales & Operations
 
-It transforms raw transactional sales data into **actionable insights** across demand, supply, promotions, and service levels.
-
-The dashboard is built with a **business-first mindset**, focusing on KPIs used by FMCG leaders to balance growth, availability, and inventory risk.
-
-**Link to dashboard:** https://public.tableau.com/views/SalesDashboard_17693900358480/SalesDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+This project features an end-to-end FMCG analytics solution combining SQL-based data exploration with a Tableau dashboard. Using three years of transactional sales data (~1M rows), the project analyzes forecast accuracy, promotions, inventory risk, service levels, and regional performance.
 
 ---
 
-## 🎯 Business Objectives
-- Evaluate and visualize Yoy performance
-- Quantify **promotion effectiveness** and uplift
-- Optimize **inventory and service levels**
-- Highlight **stockout and overstock risks**
-- Enable **regional and categorical performance analysis**
+🧠 **Overview**
+
+This dashboard provides operations leaders and planners with a clear, data-driven view of FMCG performance across demand and supply. SQL was used to explore, validate, and structure the data, while Tableau was used to visualize KPIs that support Sales & Operations Planning (S&OP) decisions.
 
 ---
 
-## 🧠 Key Insights Enabled
-- Identification of **high-revenue SKUs with unstable demand**
-- Detection of **unprofitable or ineffective promotions**
-- Regional performance comparison highlighting **growth vs margin erosion**
-- Improved balance between **inventory investment and customer service**
+🔧 **Tools & Techniques**
+
+**SQL** 
+- Designed reusable SQL views to answer executive and S&OP business questions
+- Applied advanced SQL techniques including CTEs, window functions (ROW_NUMBER, LAG), GROUP BY, HAVING, and CASE logic
+- Built analytics for ABC revenue concentration and XYZ sales volatility (proxy-based) segmentation
+- Implemented promo uplift analysis comparing promotional vs non-promotional performance
+- Created heuristic inventory risk metrics using inventory-to-sales ratios
+- Calculated year-over-year (YoY) revenue and volume growth by product category
+- Performed data quality checks, data type standardization, and NULL auditing
+- Optimized queries with proper aggregation logic and safe division (NULLIF, casting)
+
+**Tableau:**
+- Service level KPIs (fill rate, availability)
+- Geographic sales mapping using latitude and longitude
+- Subcategory Analysis
+- TOP 5 suppliers by lead time
+- Sales distribution by brand
 
 ---
 
-## 🛠 Tools & Technologies
-- **SQL** – Data preparation and KPI logic
-- **Tableau** – Interactive dashboards and visual analytics
+🗂 **Data Model / Schema**
+
+The project uses a transaction-level fact table enriched with product, time, and geographic attributes. Data was explored and validated in SQL before being visualized in Tableau.
+
+**Core Fact Table:**
+- Transaction date
+- SKU / product identifier
+- Quantity sold
+- Revenue
+- Promotion flag
+- Inventory status
+- Lead time
+
+**Dimension Attributes:**
+- Product: category, brand
+- Time: year, month
+- Geography: country, city, latitude, longitude
+
+The schema supports SKU-level, regional, and time-based analysis, enabling flexible aggregation for S&OP and operational reporting.
 
 ---
 
-## 📁 Dataset Description
-- **Time Range:** 3 years
-- **Granularity:** Transaction / SKU / City
-- **Includes:**
-  - Sales volume and revenue
-  - Promotions
-  - Inventory and stock status
-  - Lead times
-  - Geographic attributes
-- **Link to dataset:** https://www.kaggle.com/datasets/robertocarlost/fmcg-multi-country-sales-dataset
+📈 **Use Cases**
+
+- Identify high-impact SKUs driving the majority of revenue for portfolio focus
+- Segment products by sales stability vs volatility to inform planning and inventory strategy
+- Evaluate promotional effectiveness to optimize trade spend and campaign targeting
+- Flag potential inventory risk based on low coverage relative to recent sales velocity
+- Track year-over-year category performance to support strategic investment decisions
+- Assess revenue dependency risk across SKUs, categories, and suppliers to improve business resilience
 
 ---
 
-## 🚀 Project Value
-This dashboard represents a **realistic FMCG analytics use case** and demonstrates the ability to:
-- Translate business questions into **actionable KPIs**
-- Design **executive-ready dashboards**
-- Apply **S&OP and supply chain analytics concepts**
-- Communicate insights clearly to stakeholders
+💡 **Key Insights**
 
----
-
-## 📌 Use Cases
-- Executive performance reviews
-- Monthly S&OP meetings
-- Promotion planning and evaluation
-- Inventory and service level optimization
+- High-revenue SKUs with volatile demand represent significant planning risk
+- Not all promotions generate positive uplift, indicating margin leakage
+- Regional growth is sometimes offset by service level underperformance
+- Lead time variability is a key driver of stockouts and overstock
+- Inventory optimization can improve service levels without increasing stock
