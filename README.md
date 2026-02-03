@@ -2,7 +2,7 @@
 
 Tableau | SQL | FMCG Analytics | Sales & Operations
 
-This project features an end-to-end FMCG analytics solution combining SQL-based data exploration with a Tableau dashboard. Using three years of transactional sales data (~1M rows), the project analyzes forecast accuracy, promotions, inventory risk, service levels, and regional performance.
+This project features an end-to-end FMCG analytics solution combining SQL-based data exploration with a Tableau dashboard. Using three years of transactional sales data (~1M rows), the project analyzes promotional effectiveness, inventory risk, service levels, and regional performance.
 
 Dashboard Link: https://public.tableau.com/app/profile/van.do7323/viz/SalesDashboard_17693900358480/SalesDashboard
 
@@ -10,7 +10,7 @@ Dashboard Link: https://public.tableau.com/app/profile/van.do7323/viz/SalesDashb
 
 🧠 **Overview**
 
-This dashboard provides operations leaders and planners with a clear, data-driven view of FMCG performance across demand and supply. SQL was used to explore, validate, and structure the data, while Tableau was used to visualize KPIs that support Sales & Operations Planning (S&OP) decisions.
+This analysis provides operations leaders and planners with a clear, data-driven view of FMCG performance across demand and supply. SQL was used to explore, validate, and structure the data, while Tableau was used to visualize KPIs that support Sales & Operations Planning (S&OP) decisions.
 
 ---
 
@@ -19,7 +19,7 @@ This dashboard provides operations leaders and planners with a clear, data-drive
 **SQL** 
 - Designed reusable SQL views to answer executive and S&OP business questions
 - Applied advanced SQL techniques including CTEs, window functions (ROW_NUMBER, LAG), GROUP BY, HAVING, and CASE logic
-- Built analytics for ABC revenue concentration and XYZ sales volatility (proxy-based) segmentation
+- Built analytics for revenue concentration and sales volatility (proxy-based) segmentation
 - Implemented promo uplift analysis comparing promotional vs non-promotional performance
 - Created heuristic inventory risk metrics using inventory-to-sales ratios
 - Calculated year-over-year (YoY) revenue and volume growth by product category
@@ -30,7 +30,7 @@ This dashboard provides operations leaders and planners with a clear, data-drive
 - Service level KPIs (fill rate, availability)
 - Geographic sales mapping using latitude and longitude
 - Subcategory Analysis
-- TOP 5 suppliers by lead time
+- TOP 5 suppliers by average lead time
 - Sales distribution by brand
 
 ---
